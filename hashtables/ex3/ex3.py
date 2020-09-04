@@ -2,7 +2,23 @@ def intersection(arrays):
     """
     YOUR CODE HERE
     """
-    # Your code here
+    # create hash table (cache)
+    cache = {}
+    # create empty result array
+    result =[]
+
+    # for loop iterating through array and nums in array
+    #  and adding to cache
+    for arr in arrays:
+        for num in arr:
+            if num not in cache:
+                cache[num] = 1
+            else:
+                cache[num] += 1
+    # for loop finding the intersections/same nums
+        for num in cache:
+            if cache[num] == len(arrays):
+                result.append(num)
 
     return result
 
