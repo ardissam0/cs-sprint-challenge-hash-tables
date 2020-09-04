@@ -2,7 +2,7 @@ def get_indices_of_item_weights(weights, length, limit):
     """
     YOUR CODE HERE
     """
-    # create cache
+    # create has table (cache)
     cache = {}
 
     #create cases
